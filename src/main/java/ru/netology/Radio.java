@@ -50,7 +50,7 @@ public class Radio {
         if (newCurrentVolume < 0) {
             return;
         }
-        currentRadioStationNumber = newCurrentVolume;
+        currentVolume = newCurrentVolume;
 
     }
 
