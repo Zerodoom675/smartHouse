@@ -18,11 +18,11 @@ public class RadioTest {
 
     @Test
     public void shouldSetCurrentRadioStationNumber2() {
-        Radio RadioStation = new Radio();
+        Radio RadioStation = new Radio(15);
 
-        RadioStation.setCurrentRadioStationNumber(9);
+        RadioStation.setCurrentRadioStationNumber(14);
 
-        int expected = 9;
+        int expected = 14;
         int actual = RadioStation.currentRadioStationNumber;
 
         Assertions.assertEquals(expected, actual);
@@ -54,9 +54,9 @@ public class RadioTest {
 
     @Test
     public void switchTheRadioStationNumberToTheNextOneAboveTheMax() {
-        Radio RadioStation = new Radio();
+        Radio RadioStation = new Radio(15);
 
-        RadioStation.setCurrentRadioStationNumber(9);
+        RadioStation.setCurrentRadioStationNumber(14);
 
         RadioStation.next();
 
