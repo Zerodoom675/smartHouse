@@ -24,9 +24,7 @@ public class Radio {
             currentRadioStationNumber = currentRadioStationNumber + 1;
             return;
         }
-        if (currentRadioStationNumber == 9) {
-            currentRadioStationNumber = 0;
-        }
+        else currentRadioStationNumber = 0;
     }
 
     public void prev() {
@@ -34,9 +32,7 @@ public class Radio {
             currentRadioStationNumber = currentRadioStationNumber - 1;
             return;
         }
-        if (currentRadioStationNumber == 0) {
-            currentRadioStationNumber = 9;
-        }
+        else currentRadioStationNumber = 9;
     }
 
     public int getCurrentVolume() {

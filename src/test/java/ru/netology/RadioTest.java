@@ -128,6 +128,8 @@ public class RadioTest {
 
         int expected = 100;
         int actual = Volume.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -138,6 +140,8 @@ public class RadioTest {
 
         int expected = 1;
         int actual = Volume.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -148,6 +152,8 @@ public class RadioTest {
 
         int expected = 0;
         int actual = Volume.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -160,6 +166,8 @@ public class RadioTest {
 
         int expected = 99;
         int actual = Volume.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -170,6 +178,8 @@ public class RadioTest {
 
         int expected = 0;
         int actual = Volume.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -180,5 +190,7 @@ public class RadioTest {
 
         int expected = 0;
         int actual = Volume.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
     }
 }
