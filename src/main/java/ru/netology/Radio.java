@@ -22,17 +22,17 @@ public class Radio {
     public void next() {
         if (currentRadioStationNumber < 9) {
             currentRadioStationNumber = currentRadioStationNumber + 1;
-            return;
+        } else {
+            currentRadioStationNumber = 0;
         }
-        else currentRadioStationNumber = 0;
     }
 
     public void prev() {
         if (currentRadioStationNumber > 0) {
             currentRadioStationNumber = currentRadioStationNumber - 1;
-            return;
+        } else {
+            currentRadioStationNumber = 9;
         }
-        else currentRadioStationNumber = 9;
     }
 
     public int getCurrentVolume() {
